@@ -64,9 +64,11 @@ const create = () => {
 };
 btnCreate.addEventListener('click', create);
 
-const remove = () => {
-  document.querySelector('.div-create').remove();
+const destroyBoxes = () => {
+
+  count = 0;
+  boxesEl.innerHTML = ' ';
 
 
 }
-btnDestroy.addEventListener('click', remove);
+btnDestroy.addEventListener('click', destroyBoxes);
